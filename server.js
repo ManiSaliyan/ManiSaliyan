@@ -14,7 +14,8 @@ app.get('/create/:dynamic',  async function (req, res){
     const data = {
         workspace: '4407c165-dbd3-4d13-8f3a-cabb49039e88',
         qr_data: dynamic,
-        primary_color: '#1DA1F2'
+        primary_color: '#1DA1F2',
+	dynamic: 'true'
     };
      const url = "https://hovercode.com/api/v2/hovercode/create/";
      const fet = await fetch(url,data,data, {
